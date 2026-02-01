@@ -1,0 +1,117 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.topbar .left,
+.topbar .center {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+/* IZQUIERDA */
+.topbar .left {
+    display: flex;
+    flex: 2;
+    gap: 26px;
+    justify-content: space-between;
+}
+
+/* CENTRO */
+.topbar .center {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+.topbar .center img {
+    height: 32px;
+}
+
+.topbar .center2{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* DERECHA */
+.topbar .right {
+    display: flex;
+    flex: 1;
+    gap: 18px;
+    justify-content: flex-end;
+}
+
+/* BOTONES CON TEXTO */
+.action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #070707;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.action img {
+    width: 18px;
+    height: 18px;
+}
+
+.action img.ayuda  {
+    width: 40px;
+    height: 40px;
+}
+/* BOTONES SOLO ICONO */
+
+.action2 {
+    display: inline-flex;
+    align-items:center;
+    justify-content: end;
+}
+
+.action2 img {
+    width: 18px;
+    height: 18px;
+    
+}
+.action_2 img{
+    width: 36px;
+    border-radius: 50%;
+}
+
+.panel{
+    padding: 30px;
+}
+
+.panel,h1,p{
+    justify-content: center;
+    align-items: center;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.add {
+    margin-top: 25px;
+    width: auto;
+    padding: 12px 30px;
+}

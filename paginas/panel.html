@@ -3,16 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <title>Panel de Indicadores</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles_general.css">
+<link rel="stylesheet" href="../styles/panel.css">
 </head>
 <body>
 
 <header class="topbar">
-    <a href="panel.html">➕ Añadir</a>
-    <a href="panel.html">🔄 Refrescar</a>
-    <a href="panel.html">🗑 Eliminar</a>
-    <a href="panel.html">📊 Reportar</a>
-    <a href="panel.html">❓ Ayuda</a>
+    <div class="left">
+        <a href="panel.html" class="action">
+            <img src="../imgs/agregar.svg">
+            Añadir
+        </a>
+        <a href="panel.html" class="action">
+            <img src="../imgs/refresh.svg">
+            Refrescar
+        </a>
+        <a href="panel.html" class="action">
+            <img src="../imgs/delete.svg" >
+            Eliminar
+        </a>
+    </div>    
+
+    <div class="center">
+        <img src="../imgs/logo.svg">
+    </div>    
+
+    <div class="center2">
+        <a href="panel.html" class="action">
+            <img src="../imgs/reportar.svg">
+            Reportar
+        </a>
+        <a href="panel.html" class="action">
+            <img src="../imgs/ayuda.png" class="ayuda">
+            Ayuda
+        </a>
+    </div>
+
+    <div class="right"> 
+        <a href="panel.html" class="action2">
+            <img src="../imgs/setings.svg" >
+        </a>
+        <a href="panel.html" class="action2">
+            <img src="../imgs/notificaciones.svg" >
+        </a>
+        <a href="panel.html" class="action_2">
+            <img src="../imgs/pedrito.png " >
+        </a>
+    </div>
+
 </header>
 
 <main class="panel">
