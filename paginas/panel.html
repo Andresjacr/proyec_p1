@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<!-- esta es la barra principal -->
 <header class="topbar">
     <div class="left">
         <a href="panel.html" class="action">
@@ -50,29 +51,59 @@
             <img src="../imgs/pedrito.png " >
         </a>
     </div>
-
 </header>
-
+<!-- Aqui comienzo con el panel de tareas -->
 <main class="panel">
     <h1>Panel de Indicadores</h1>
     <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo.</p>
 
-    <table>
+    <table class="panel-table">
         <tr>
             <th>Indicador</th>
+            <th>Descripcion</th>
             <th>Categoría</th>
+            <th>Fecha de Inicio</th>
+            <th>Fecha de Terminacion</th>
+            <th>Formula</th>
+            <th>Frecuencia</th>
             <th>Cumplimiento</th>
             <th>Área</th>
         </tr>
-        <tr>
+        <tr class="row-card">
             <td>Modelado 3D</td>
+            <td>interes por dise...</td>
             <td>Baja</td>
-            <td class="red">31%</td>
+            <td>12/05/21</td>
+            <td>12/12/21</td>
+            <td>Met.Agil</td>
+            <td>1/4</td>
+            <td>
+                <div class="progress-circle red" style="--value:31;">
+                    <span>31%</span>
+                </div>
+            </td>
             <td>Marketing</td>
+            <td class="options"> <a href="panel.html"> <img src="../imgs/options.svg" alt="options"></a> </td>
+        </tr>
+        <tr class="row-card">
+            <td>Finca Galeon</td>
+            <td>diceño de maque...</td>
+            <td>Baja</td>
+            <td>12/04/21</td>
+            <td>12/05/21</td>
+            <td>Met.Agil</td>
+            <td>1/4</td>
+            <td>
+                <div class="progress-circle red" style="--value:25;">
+                    <span>25%</span>
+                </div>
+            </td>
+            <td>Diceño</td>
+            <td class="options"> <a href="panel.html"> <img src="../imgs/options.svg" alt="options"></a> </td>
         </tr>
     </table>
 
-    <a href="login.html" class="add">Cerrar sesión</a>
+    <a href="panel.html" class="add">Añadir Elementos</a>
 </main>
 
 </body>
