@@ -1,0 +1,106 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body.bg {
+    margin: 0;
+    height: 100vh;
+    background: url("fondo.jpg") center/cover no-repeat;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.center-logo img {
+    width: 120px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 90px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #ff6a00;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.topbar {
+    display: flex;
+    gap: 25px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.add {
+    margin-top: 25px;
+    width: auto;
+    padding: 12px 30px;
+}
+
+.link-card {
+    text-decoration: none;
+    color: inherit;
+}
