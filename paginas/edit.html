@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Editar Proyecto</title>
+<link rel="stylesheet" href="../styles_general.css">
+<link rel="stylesheet" href="../styles/edit.css">
+</head>
+<body class="bg">
+
+<div class="edit-container">
+
+  <header class="edit-header">
+    <a href="../logins/carga_panel.html">← Volver</a>
+    <h1>Editar Proyecto</h1>
+    <img src="../imgs/logo.svg" class="logo">
+  </header>
+
+  <!-- RESUMEN -->
+  <section class="summary-card">
+    <div class="badge active">Activo</div>
+    <h2>Proyecto: Plataforma de Indicadores</h2>
+    <p>· Última actualización: Hoy</p>
+  </section>
+
+  <!-- FORMULARIO -->
+  <form class="edit-card">
+    <h3>Información general</h3>
+
+    <div class="grid">
+      <label>
+        Nombre del proyecto
+        <input type="text" value="Plataforma de Indicadores">
+      </label>
+
+      <label>
+        Responsable
+        <input type="text" value="Pedro Gómez">
+      </label>
+
+      <label>
+        Estado
+        <select>
+          <option>Activo</option>
+          <option>Pausado</option>
+          <option>Finalizado</option>
+        </select>
+      </label>
+
+      <label>
+        Prioridad
+        <select>
+          <option>Alta</option>
+          <option selected>Media</option>
+          <option>Baja</option>
+        </select>
+      </label>
+    </div>
+
+    <label>
+      Descripción
+      <textarea rows="4">Proyecto para gestionar indicadores del área de marketing.</textarea>
+    </label>
+
+    <div class="dates">
+      <label>Inicio <input type="date"></label>
+      <label>Fin <input type="date"></label>
+    </div>
+
+    <div class="actions">
+        <a href="../logins/carga_panel.html" class="cancel">Cancelar</a>
+
+        <input type="checkbox" id="toggle-alerta" hidden>
+            <label for="toggle-alerta" class="btn">
+              Guardar
+            </label>
+
+            <div class="alerta alerta-exito">
+              ✔ Datos guardados correctamente
+            </div>
+      </div>
+  </form>
+
+</div>
+
+</body>
+</html>
