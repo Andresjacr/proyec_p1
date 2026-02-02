@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Configuraciones</title>
+<link rel="stylesheet" href="../styles_general.css">
+<link rel="stylesheet" href="../styles/settings.css">
+</head>
+<body class="bg">
+
+<div class="settings-container">
+
+    <header class="settings-header">
+        <a href="../logins/carga_panel.html">← Volver</a>
+        <h1>Configuraciones</h1>
+        <img src="../imgs/logo.svg" class="logo">
+    </header>
+
+    <!-- PERFIL -->
+    <section class="settings-card">
+        <h2>Perfil</h2>
+
+        <div class="profile">
+            <p><b>Usuario:</b> Pedro Gómez</p>
+            <p><b>Email:</b> admin@kario.com</p>
+        </div>
+    </section>
+
+    <!-- PREFERENCIAS -->
+    <section class="settings-card">
+        <h2>Preferencias</h2>
+
+        <div class="setting-item">
+            <label>Modo oscuro</label>
+            <select>
+                <option>Desactivado</option>
+                <option>Activado</option>
+            </select>
+        </div>
+
+        <div class="setting-item">
+            <label>Idioma</label>
+            <select>
+                <option>Español</option>
+                <option>Inglés</option>
+            </select>
+        </div>
+
+        <div class="setting-item">
+            <label>Tamaño de fuente</label>
+            <select>
+                <option>Pequeña</option>
+                <option selected>Normal</option>
+                <option>Grande</option>
+            </select>
+        </div>
+    </section>
+
+    <div class="actions">
+        <a href="../logins/carga_panel.html" class="cancel">Cancelar</a>
+
+        <input type="checkbox" id="toggle-alerta" hidden>
+            <label for="toggle-alerta" class="btn">
+              Guardar
+            </label>
+
+            <div class="alerta alerta-exito">
+              ✔ Datos guardados correctamente
+            </div>
+      </div>
+
+</div>
+
+</body>
+</html>
