@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reportar Error</title>
+<link rel="stylesheet" href="../styles_general.css">
+<link rel="stylesheet" href="../styles/report.css">
+</head>
+<body class="bg">
+
+<div class="report-container">
+
+    <header class="report-header">
+        <a href="../logins/carga_panel.html">← Volver</a>
+        <h1>Reportar un Error</h1>
+        <img src="../imgs/logo.svg" class="logo">
+    </header>
+
+    <form class="report-card">
+
+        <h2>Formulario de reporte</h2>
+
+        <label>
+            Tipo de error
+            <select>
+                <option>Visual</option>
+                <option>Funcional</option>
+                <option>Rendimiento</option>
+                <option>Otro</option>
+            </select>
+        </label>
+
+        <label>
+            Página afectada
+            <select>
+                <option>Panel de Indicadores</option>
+                <option>Añadir</option>
+                <option>Eliminar</option>
+                <option>Login</option>
+                <option>Otro</option>
+            </select>
+        </label>
+
+        <label>
+            Descripción del error
+            <textarea rows="4" placeholder="Describe el problema..."></textarea>
+        </label>
+
+        <label>
+            Prioridad
+            <select>
+                <option>Baja</option>
+                <option>Media</option>
+                <option>Alta</option>
+            </select>
+        </label>
+
+        <div class="actions">
+            <a href="../logins/carga_panel.html" class="cancel">Cancelar</a>
+
+            <input type="checkbox" id="toggle-alerta" hidden>
+                <label for="toggle-alerta" class="btn">
+                  Enviar Reporte
+                </label>
+
+                <div class="alerta alerta-exito">
+                  ✔ Datos enviados correctamente
+                </div>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

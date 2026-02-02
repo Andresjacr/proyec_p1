@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir</title>
+    <link rel="stylesheet" href="../styles_general.css">
     <link rel="stylesheet" href="../styles/añadir.css">
 </head>
-<body>
-    
-
+<body class="bg">
 <div class="add-container">
 
     <header class="add-header">
       <a href="../logins/carga_panel.html">← Volver</a>
-      <h1>Añadir Indicador</h1>
+      <h1>Añadir Proyecto</h1>
+      <img src="../imgs/logo.svg" class="logo">
     </header>
   
     <form class="add-card">
@@ -69,8 +69,16 @@
   
       <div class="actions">
         <a href="../logins/carga_panel.html" class="cancel">Cancelar</a>
-        <button type="submit">Guardar</button>
-      </div>
+
+        <input type="checkbox" id="toggle-alerta" hidden>
+            <label for="toggle-alerta" class="btn">
+              Guardar
+            </label>
+
+            <div class="alerta alerta-exito">
+              ✔ Datos guardados correctamente
+            </div>
+    </div>
   
     </form>
   </div>
