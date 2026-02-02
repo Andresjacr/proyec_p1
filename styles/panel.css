@@ -231,3 +231,130 @@
     border-radius: 20px;
     font-weight: 500;
 }
+
+/* =========================
+   📱 MÓVILES
+   ========================= */
+   @media (max-width: 480px) {
+
+    /* TOPBAR */
+    .topbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 16px;
+        gap: 10px;
+    }
+
+    .topbar .left,
+    .topbar .center,
+    .topbar .right {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .topbar .left {
+        justify-content: space-between;
+    }
+
+    .topbar .center img {
+        height: 26px;
+    }
+
+    .action span {
+        display: none; /* solo iconos */
+    }
+
+    /* PANEL */
+    .panel {
+        padding: 16px;
+    }
+
+    .panel h1 {
+        font-size: 20px;
+    }
+
+    .panel p {
+        font-size: 14px;
+    }
+
+    /* TABLA -> TARJETAS */
+    .panel-table thead {
+        display: none;
+    }
+
+    .panel-table,
+    .panel-table tbody,
+    .panel-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .row-card {
+        margin-bottom: 16px;
+    }
+
+    .row-card td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 14px;
+        border-radius: 16px;
+        border: 1px solid #e5e5e5;
+        margin-bottom: 6px;
+    }
+
+    .row-card td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #555;
+    }
+
+    /* progreso */
+    .progress,
+    .progress-circle {
+        margin-left: auto;
+    }
+
+    /* BOTÓN */
+    .add {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+ TABLETS
+   ========================= */
+@media (max-width: 768px) {
+
+    .topbar {
+        padding: 0 16px;
+    }
+
+    .panel {
+        padding: 20px;
+    }
+
+    .panel-table {
+        font-size: 13px;
+    }
+
+    .progress-circle {
+        --size: 42px;
+    }
+}
+
+/* =========================
+   PANTALLAS GRANDES
+   ========================= */
+@media (min-width: 1200px) {
+
+    .panel {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .panel-table {
+        font-size: 14px;
+    }
+}

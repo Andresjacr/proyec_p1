@@ -36,3 +36,55 @@ small{
     text-decoration: none;
     color: inherit;
 }
+
+/* =========================
+   RESPONSIVE CARD
+   ========================= */
+
+/* MÓVILES */
+@media (max-width: 480px) {
+
+    .card {
+        width: 90%;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .logo {
+        width: 55px;
+    }
+
+    .avatar {
+        width: 70px;
+        margin: 10px 0;
+    }
+
+    small {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    .card {
+        width: 360px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .avatar {
+        width: 80px;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1200px) {
+
+    .card {
+        width: 460px;
+    }
+}

@@ -15,3 +15,41 @@
     width: 70px;
     margin-bottom: 10px;
 }
+
+/* =========================
+   RESPONSIVE CARD
+   ========================= */
+
+/* MÓVILES */
+@media (max-width: 480px) {
+
+    .card {
+        width: 90%;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .logo {
+        width: 55px;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    .card {
+        width: 360px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1200px) {
+
+    .card {
+        width: 460px;
+    }
+}
