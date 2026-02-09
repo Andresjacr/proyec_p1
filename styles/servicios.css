@@ -1,0 +1,225 @@
+/* ================= VARIABLES ================= */
+:root {
+    --primary: #ff6a00;
+    --primary-light: #ff9a3c;
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --text: #2f2f2f;
+    --border: #e5e5e5;
+}
+
+/* ================= BODY ================= */
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+header a {
+    background: #ff6a00;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 32px;
+}
+
+/* aqui comienza el panel de tareas */
+.panel{
+    padding: 30px;
+}
+
+.panel h1,
+.panel p{
+    text-align: center;
+}
+
+.panel-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px; /* espacio entre filas */
+}
+
+/* CABECERA */
+.panel-table tr{
+    display: flex;
+    margin: 30px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: #333;
+    padding: 10px;
+}
+
+th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 300px;
+    background-color: #ff9a3c;
+}
+
+/* FILA TIPO TARJETA */
+.row-card  {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    background: #ff9a3c;
+}
+
+/* Bordes redondeados SOLO extremos */
+.row-card td:first-child {
+    border-left: 1px solid #e5e5e5;
+    border-radius: 30px 0 0 30px;
+}
+
+.row-card td:nth-last-child(1) {
+    border-right: 1px solid #e5e5e5;
+    border-radius: 0 30px 30px 0;
+}
+
+
+/* =========================
+   📱 MÓVILES
+   ========================= */
+   @media (max-width: 480px) {
+
+    /* TOPBAR */
+    .topbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 16px;
+        gap: 10px;
+    }
+
+    .topbar .left,
+    .topbar .center,
+    .topbar .right {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .topbar .left {
+        justify-content: space-between;
+    }
+
+    .topbar .center img {
+        height: 26px;
+    }
+
+    .action span {
+        display: none; /* solo iconos */
+    }
+
+    /* PANEL */
+    .panel {
+        padding: 16px;
+    }
+
+    .panel h1 {
+        font-size: 20px;
+    }
+
+    .panel p {
+        font-size: 14px;
+    }
+
+    /* TABLA -> TARJETAS */
+    .panel-table thead {
+        display: none;
+    }
+
+    .panel-table,
+    .panel-table tbody,
+    .panel-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .row-card {
+        margin-bottom: 16px;
+    }
+
+    .row-card td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 14px;
+        border-radius: 16px;
+        border: 1px solid #e5e5e5;
+        margin-bottom: 6px;
+    }
+
+    .row-card td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #555;
+    }
+
+    /* progreso */
+    .progress,
+    .progress-circle {
+        margin-left: auto;
+    }
+
+    /* BOTÓN */
+    .add {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+ TABLETS
+   ========================= */
+@media (max-width: 768px) {
+
+    .topbar {
+        padding: 0 16px;
+    }
+
+    .panel {
+        padding: 20px;
+    }
+
+    .panel-table {
+        font-size: 13px;
+    }
+
+    .progress-circle {
+        --size: 42px;
+    }
+}
+
+/* =========================
+   PANTALLAS GRANDES
+   ========================= */
+@media (min-width: 1200px) {
+
+    .panel {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .panel-table {
+        font-size: 14px;
+    }
+}
